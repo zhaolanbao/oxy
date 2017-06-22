@@ -204,10 +204,6 @@ func (rr *RoundRobin) UpsertServer(u *url.URL, options ...ServerOption) error {
 		}
 	}
 
-	if srv.weight == 0 {
-		srv.weight = defaultWeight
-	}
-
 	rr.servers = append(rr.servers, srv)
 	rr.resetState()
 	return nil
@@ -275,8 +271,6 @@ type server struct {
 	// Relative weight for the enpoint to other enpoints in the load balancer
 	weight int
 }
-
-const defaultWeight = 1
 
 func sameURL(a, b *url.URL) bool {
 	return a.Path == b.Path && a.Host == b.Host && a.Scheme == b.Scheme
