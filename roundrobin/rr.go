@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	log "github.com/Sirupsen/logrus"
-	"github.com/vulcand/oxy/utils"
+	"github.com/aporeto-inc/oxy/utils"
 )
 
 // Weight is an optional functional argument that sets weight of the server

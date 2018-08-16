@@ -21,7 +21,7 @@ import (
 
 	"github.com/gorilla/websocket"
 	log "github.com/Sirupsen/logrus"
-	"github.com/vulcand/oxy/utils"
+	"github.com/aporeto-inc/oxy/utils"
 )
 
 // OxyLogger interface of the internal

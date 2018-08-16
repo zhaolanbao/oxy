@@ -3,14 +3,14 @@ Oxy [![Build Status](https://travis-ci.org/vulcand/oxy.svg?branch=master)](https
 
 Oxy is a Go library with HTTP handlers that enhance HTTP standard library:
 
-* [Buffer](http://godoc.org/github.com/vulcand/oxy/buffer) retries and buffers requests and responses 
-* [Stream](http://godoc.org/github.com/vulcand/oxy/stream) passes-through requests, supports chunked encoding with configurable flush interval 
-* [Forward](http://godoc.org/github.com/vulcand/oxy/forward) forwards requests to remote location and rewrites headers 
-* [Roundrobin](http://godoc.org/github.com/vulcand/oxy/roundrobin) is a round-robin load balancer 
-* [Circuit Breaker](http://godoc.org/github.com/vulcand/oxy/cbreaker) Hystrix-style circuit breaker
-* [Connlimit](http://godoc.org/github.com/vulcand/oxy/connlimit) Simultaneous connections limiter
-* [Ratelimit](http://godoc.org/github.com/vulcand/oxy/ratelimit) Rate limiter (based on tokenbucket algo)
-* [Trace](http://godoc.org/github.com/vulcand/oxy/trace) Structured request and response logger
+* [Buffer](http://godoc.org/github.com/aporeto-inc/oxy/buffer) retries and buffers requests and responses 
+* [Stream](http://godoc.org/github.com/aporeto-inc/oxy/stream) passes-through requests, supports chunked encoding with configurable flush interval 
+* [Forward](http://godoc.org/github.com/aporeto-inc/oxy/forward) forwards requests to remote location and rewrites headers 
+* [Roundrobin](http://godoc.org/github.com/aporeto-inc/oxy/roundrobin) is a round-robin load balancer 
+* [Circuit Breaker](http://godoc.org/github.com/aporeto-inc/oxy/cbreaker) Hystrix-style circuit breaker
+* [Connlimit](http://godoc.org/github.com/aporeto-inc/oxy/connlimit) Simultaneous connections limiter
+* [Ratelimit](http://godoc.org/github.com/aporeto-inc/oxy/ratelimit) Rate limiter (based on tokenbucket algo)
+* [Trace](http://godoc.org/github.com/aporeto-inc/oxy/trace) Structured request and response logger
 
 It is designed to be fully compatible with http standard library, easy to customize and reuse.
 
@@ -33,8 +33,8 @@ Simple reverse proxy
 
 import (
   "net/http"
-  "github.com/vulcand/oxy/forward"
-  "github.com/vulcand/oxy/testutils"
+  "github.com/aporeto-inc/oxy/forward"
+  "github.com/aporeto-inc/oxy/testutils"
   )
 
 // Forwards incoming requests to whatever location URL points to, adds proper forwarding headers
@@ -61,8 +61,8 @@ As a next step, let us add a round robin load-balancer:
 
 import (
   "net/http"
-  "github.com/vulcand/oxy/forward"
-  "github.com/vulcand/oxy/roundrobin"
+  "github.com/aporeto-inc/oxy/forward"
+  "github.com/aporeto-inc/oxy/roundrobin"
   )
 
 // Forwards incoming requests to whatever location URL points to, adds proper forwarding headers
@@ -86,9 +86,9 @@ What if we want to handle retries and replay the request in case of errors? `buf
 
 import (
   "net/http"
-  "github.com/vulcand/oxy/forward"
-  "github.com/vulcand/oxy/buffer"
-  "github.com/vulcand/oxy/roundrobin"
+  "github.com/aporeto-inc/oxy/forward"
+  "github.com/aporeto-inc/oxy/buffer"
+  "github.com/aporeto-inc/oxy/roundrobin"
   )
 
 // Forwards incoming requests to whatever location URL points to, adds proper forwarding headers

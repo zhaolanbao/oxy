@@ -7,7 +7,7 @@ go:
 
 sudo: false
 
-go_import_path: github.com/vulcand/oxy
+go_import_path: github.com/aporeto-inc/oxy
 
 notifications:
   email:

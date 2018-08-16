@@ -7,7 +7,7 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
-	"github.com/vulcand/oxy/testutils"
+	"github.com/aporeto-inc/oxy/testutils"
 )
 
 func TestRampUp(t *testing.T) {

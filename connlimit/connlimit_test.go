@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/vulcand/oxy/testutils"
-	"github.com/vulcand/oxy/utils"
+	"github.com/aporeto-inc/oxy/testutils"
+	"github.com/aporeto-inc/oxy/utils"
 )
 
 // We've hit the limit and were able to proceed once the request has completed
