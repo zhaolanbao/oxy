@@ -15,7 +15,7 @@
   name = "github.com/mailgun/ttlmap"
 
 [[constraint]]
-  name = "github.com/sirupsen/logrus"
+  name = "github.com/Sirupsen/logrus"
   version = "1.0.3"
 
 [[constraint]]

@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"reflect"
 
-	log "github.com/sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 )
 
 // ProxyWriter calls recorder, used to debug logs
