@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/aporeto-inc/oxy/memmetrics"
+	"github.com/zhaolanbao/oxy/memmetrics"
 )
 
 func TestTripped(t *testing.T) {

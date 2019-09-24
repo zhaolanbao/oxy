@@ -20,8 +20,8 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	log "github.com/Sirupsen/logrus"
-	"github.com/aporeto-inc/oxy/utils"
+	log "github.com/sirupsen/logrus"
+	"github.com/zhaolanbao/oxy/utils"
 )
 
 // OxyLogger interface of the internal

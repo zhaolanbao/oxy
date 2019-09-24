@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/mailgun/timetools"
-	"github.com/aporeto-inc/oxy/utils"
+	"github.com/zhaolanbao/oxy/utils"
 )
 
 // NewHandler creates a new Server

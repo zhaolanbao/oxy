@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/aporeto-inc/oxy/forward"
-	"github.com/aporeto-inc/oxy/testutils"
-	"github.com/aporeto-inc/oxy/utils"
+	"github.com/zhaolanbao/oxy/forward"
+	"github.com/zhaolanbao/oxy/testutils"
+	"github.com/zhaolanbao/oxy/utils"
 )
 
 func TestNoServers(t *testing.T) {

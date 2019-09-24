@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/mailgun/timetools"
-	log "github.com/Sirupsen/logrus"
-	"github.com/aporeto-inc/oxy/memmetrics"
-	"github.com/aporeto-inc/oxy/utils"
+	log "github.com/sirupsen/logrus"
+	"github.com/zhaolanbao/oxy/memmetrics"
+	"github.com/zhaolanbao/oxy/utils"
 )
 
 // RebalancerOption - functional option setter for rebalancer

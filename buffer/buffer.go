@@ -45,8 +45,8 @@ import (
 	"reflect"
 
 	"github.com/mailgun/multibuf"
-	log "github.com/Sirupsen/logrus"
-	"github.com/aporeto-inc/oxy/utils"
+	log "github.com/sirupsen/logrus"
+	"github.com/zhaolanbao/oxy/utils"
 )
 
 const (
@@ -364,7 +364,7 @@ func (b *bufferWriter) expectBody(r *http.Request) bool {
 	if (b.code >= 100 && b.code < 200) || b.code == 204 || b.code == 304 {
 		return false
 	}
-	// refer to https://github.com/aporeto-inc/oxy/issues/113
+	// refer to https://github.com/zhaolanbao/oxy/issues/113
 	// if b.header.Get("Content-Length") == "" && b.header.Get("Transfer-Encoding") == "" {
 	// 	return false
 	// }
