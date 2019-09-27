@@ -9,7 +9,7 @@ import (
 
 	"github.com/mailgun/timetools"
 	"github.com/mailgun/ttlmap"
-	log "github.com/sirupsen/logrus"
+	log "github.com/zhaolanbao/logrus"
 	"github.com/zhaolanbao/oxy/utils"
 )
 

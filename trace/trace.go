@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	log "github.com/sirupsen/logrus"
+	log "github.com/zhaolanbao/logrus"
 	"github.com/zhaolanbao/oxy/utils"
 )
 

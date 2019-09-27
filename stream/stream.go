@@ -34,7 +34,7 @@ package stream
 import (
 	"net/http"
 
-	log "github.com/sirupsen/logrus"
+	log "github.com/zhaolanbao/logrus"
 	"github.com/zhaolanbao/oxy/utils"
 )
 

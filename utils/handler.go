@@ -6,7 +6,7 @@ import (
 	"net"
 	"net/http"
 
-	log "github.com/sirupsen/logrus"
+	log "github.com/zhaolanbao/logrus"
 )
 
 // StatusClientClosedRequest non-standard HTTP status code for client disconnection
